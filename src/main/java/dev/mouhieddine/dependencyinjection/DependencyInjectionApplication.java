@@ -1,9 +1,6 @@
 package dev.mouhieddine.dependencyinjection;
 
-import dev.mouhieddine.dependencyinjection.controllers.ConstructorInjectedController;
-import dev.mouhieddine.dependencyinjection.controllers.MyController;
-import dev.mouhieddine.dependencyinjection.controllers.PropertyInjectedController;
-import dev.mouhieddine.dependencyinjection.controllers.SetterInjectedController;
+import dev.mouhieddine.dependencyinjection.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -38,6 +35,11 @@ public class DependencyInjectionApplication {
 
         ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
         System.out.println(constructorInjectedController.getGreeting());
+
+        System.out.println("<--- Spring profiles --->");
+
+        I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+        System.out.println(i18nController.sayHello());
 
     }
 
