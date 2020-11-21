@@ -11,7 +11,7 @@ class ConstructorInjectedControllerTest {
     ConstructorInjectedController controller;
     @BeforeEach
     void setUp() {
-        // manual constructor based injection
+        // manual constructor based injection -> most preferred way to do DI
         controller= new ConstructorInjectedController(new GreetingServiceImpl());
     }
 
