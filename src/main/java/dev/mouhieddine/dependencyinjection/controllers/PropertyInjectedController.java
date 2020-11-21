@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyInjectedController {
 
-    @Qualifier("propertyInjectedService")
+    @Qualifier("propertyInjectedGreetingService")
     @Autowired // This annotations tells Spring to inject an instance of the GreetingService
     public GreetingService greetingService;
 

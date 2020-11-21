@@ -3,9 +3,9 @@ package dev.mouhieddine.dependencyinjection.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SetterInjectedService implements GreetingService {
+public class PropertyInjectedGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "[Setter] Hello World";
+        return "[Property] Hello world";
     }
 }

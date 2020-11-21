@@ -1,6 +1,6 @@
 package dev.mouhieddine.dependencyinjection.controllers;
 
-import dev.mouhieddine.dependencyinjection.services.ConstructorGreetingService;
+import dev.mouhieddine.dependencyinjection.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ class SetterInjectedControllerTest {
     void setUp() {
         // manual setter based injection using properties
         controller = new SetterInjectedController();
-        controller.setGreetingService(new ConstructorGreetingService());
+        controller.setGreetingService(new ConstructorInjectedGreetingService());
     }
 
     @Test

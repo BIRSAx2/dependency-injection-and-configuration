@@ -1,6 +1,6 @@
 package dev.mouhieddine.dependencyinjection.controllers;
 
-import dev.mouhieddine.dependencyinjection.services.ConstructorGreetingService;
+import dev.mouhieddine.dependencyinjection.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ class PropertyInjectedControllerTest {
     void setUp() {
         // manual property injection using properties -> least preferred way to do DI
         controller = new PropertyInjectedController();
-        controller.greetingService = new ConstructorGreetingService();
+        controller.greetingService = new ConstructorInjectedGreetingService();
     }
 
     @Test
