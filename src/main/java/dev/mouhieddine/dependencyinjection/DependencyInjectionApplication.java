@@ -15,10 +15,10 @@ public class DependencyInjectionApplication {
 
         ApplicationContext ctx = SpringApplication.run(DependencyInjectionApplication.class, args);
 
-        MyController myController = (MyController) ctx.getBean("myController");
+        System.out.println("<--- Primary bean --->");
 
-        String greeting = myController.sayHello();
-        System.out.println(greeting);
+        MyController myController = (MyController) ctx.getBean("myController");
+        System.out.println(myController.sayHello());
 
         System.out.println("<--- Property Based Injection --->");
         // we have to annotate PropertyInjectedController as a Spring managed Controller
