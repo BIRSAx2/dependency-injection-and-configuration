@@ -41,6 +41,12 @@ public class DependencyInjectionApplication {
         I18nController i18nController = (I18nController) ctx.getBean("i18nController");
         System.out.println(i18nController.sayHello());
 
+        System.out.println("<--- Pet Service --->");
+
+        CatPetController catPetController = (CatPetController) ctx.getBean("catPetController");
+        System.out.println(catPetController.getPetName());
+
+
     }
 
 }
