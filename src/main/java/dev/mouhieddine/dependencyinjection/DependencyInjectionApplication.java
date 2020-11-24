@@ -5,19 +5,22 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-@SpringBootApplication
+@SpringBootApplication // will scan only components under this package
 public class DependencyInjectionApplication {
 
     public static void main(String[] args) {
 
         ApplicationContext ctx = SpringApplication.run(DependencyInjectionApplication.class, args);
 
-        System.out.println("<--- Primary bean --->");
+//        System.out.println("<--- Primary bean --->");
 
         MyController myController = (MyController) ctx.getBean("myController");
         System.out.println(myController.sayHello());
 
-        System.out.println("<--- Property Based Injection --->");
+        System.out.println(ctx.getBean(PropertyInjectedController.class).getGreeting());
+        System.out.println(ctx.getBean(ConstructorInjectedController.class).getGreeting());
+        System.out.println(ctx.getBean(SetterInjectedController.class).getGreeting());
+        /*System.out.println("<--- Property Based Injection --->");
         // we have to annotate PropertyInjectedController as a Spring managed Controller
         // we have to annotate the greetingService dependency with @Autowired to tell Spring to Inject and instance of GreetingService
         // we have to annotate the GreetingServiceImpl with @Service to make it a Spring managed Service
@@ -44,7 +47,7 @@ public class DependencyInjectionApplication {
         System.out.println("<--- Pet Service --->");
 
         CatPetController catPetController = (CatPetController) ctx.getBean("catPetController");
-        System.out.println(catPetController.getPetName());
+        System.out.println(catPetController.getPetName());*/
 
 
     }
