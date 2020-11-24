@@ -1,6 +1,6 @@
 package dev.mouhieddine.dependencyinjection.controllers;
 
-import dev.mouhieddine.services.GreetingService;
+import dev.mouhieddine.dependencyinjection.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 

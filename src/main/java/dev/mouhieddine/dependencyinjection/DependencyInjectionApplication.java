@@ -7,7 +7,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication // will scan only components under this package
-@ComponentScan(basePackages = {"dev.mouhieddine.services","dev.mouhieddine.dependencyinjection"}) // will search from this packages down
 
 public class DependencyInjectionApplication {
 
@@ -23,6 +22,7 @@ public class DependencyInjectionApplication {
         System.out.println(ctx.getBean(PropertyInjectedController.class).getGreeting());
         System.out.println(ctx.getBean(ConstructorInjectedController.class).getGreeting());
         System.out.println(ctx.getBean(SetterInjectedController.class).getGreeting());
+
         /*System.out.println("<--- Property Based Injection --->");
         // we have to annotate PropertyInjectedController as a Spring managed Controller
         // we have to annotate the greetingService dependency with @Autowired to tell Spring to Inject and instance of GreetingService

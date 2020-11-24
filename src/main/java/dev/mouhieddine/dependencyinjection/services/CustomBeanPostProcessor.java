@@ -1,4 +1,4 @@
-package dev.mouhieddine.services;
+package dev.mouhieddine.dependencyinjection.services;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

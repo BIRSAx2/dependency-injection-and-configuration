@@ -1,4 +1,4 @@
-package dev.mouhieddine.services;
+package dev.mouhieddine.dependencyinjection.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

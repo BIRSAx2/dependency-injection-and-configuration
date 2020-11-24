@@ -1,6 +1,6 @@
 package dev.mouhieddine.dependencyinjection.controllers;
 
-import dev.mouhieddine.services.PetService;
+import dev.mouhieddine.dependencyinjection.services.PetService;
 import org.springframework.stereotype.Controller;
 
 @Controller

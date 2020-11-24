@@ -1,6 +1,6 @@
 package dev.mouhieddine.dependencyinjection.controllers;
 
-import dev.mouhieddine.services.ConstructorInjectedGreetingService;
+import dev.mouhieddine.dependencyinjection.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
