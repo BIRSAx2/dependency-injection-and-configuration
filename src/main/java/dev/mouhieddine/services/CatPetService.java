@@ -1,4 +1,4 @@
-package dev.mouhieddine.dependencyinjection.services;
+package dev.mouhieddine.services;
 
 import org.springframework.stereotype.Service;
 

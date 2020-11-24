@@ -1,6 +1,6 @@
 package dev.mouhieddine.dependencyinjection.controllers;
 
-import dev.mouhieddine.dependencyinjection.services.GreetingService;
+import dev.mouhieddine.services.GreetingService;
 import org.springframework.stereotype.Component;
 
 @Component
