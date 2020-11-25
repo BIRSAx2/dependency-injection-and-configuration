@@ -1,0 +1,37 @@
+# this is a comment
+name: Mouhieddine
+
+names:
+  - Mouhieddine
+  - Sabir
+  - Tom
+
+pound_sing: "#"
+
+book:
+  author: Ken Follet
+  publisher: Idk
+
+truth: yes
+another_truth: True
+more_true: true
+
+false: no
+another_false: False
+more_false: false
+
+string_val: "This is it's quote" #double quotes to escape '
+mycourses: "My Courses: one, two ,three"
+
+inclide_new_lines: |
+  new line 1
+  new line 2
+  new line 3
+
+ignore_new_lines: >
+  this
+  is
+  just
+  one
+  long
+  string

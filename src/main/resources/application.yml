@@ -1,0 +1,5 @@
+dev:
+  jms:
+    username: jms_username
+    password: jms_password changed
+    dburl: jms_url
