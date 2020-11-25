@@ -14,10 +14,7 @@ public class DependencyInjectionApplication {
 
         ApplicationContext ctx = SpringApplication.run(DependencyInjectionApplication.class, args);
 
-//        System.out.println("<--- Primary bean --->");
-
         MyController myController = (MyController) ctx.getBean("myController");
-        System.out.println(myController.sayHello());
 
 
 
